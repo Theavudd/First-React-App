@@ -1,12 +1,8 @@
-import React from "react";
-import LandingScreen from "./modules/landingScreen";
+import React from 'react';
+import Router from './routes';
 
 const App = () => {
-  return (
-    <React.Fragment>
-      <LandingScreen />
-    </React.Fragment>
-  );
+    return <Router />;
 };
 
 export default App;

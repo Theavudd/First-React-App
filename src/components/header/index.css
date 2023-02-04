@@ -1,0 +1,9 @@
+.headerContainer {
+    flex-direction: row;
+}
+
+.navbarText {
+    font-size: 14px;
+    line-height: 24px;
+    color: '#505F98';
+}
