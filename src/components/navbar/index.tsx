@@ -1,5 +1,6 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
+import './index.css';
 
 const NavBar = () => {
     return (
@@ -7,15 +8,47 @@ const NavBar = () => {
             <div className="navbar">
                 <ul className="nav-list">
                     <li>
-                        <NavLink to={'/'}>{'Home'}</NavLink>
+                        <NavLink
+                            to={'/'}
+                            style={({isActive}) => ({
+                                fontWeight: isActive ? '900' : '500',
+                            })}
+                            className={'list-item'}>
+                            {'Home'}
+                        </NavLink>
                     </li>
                     <li>
-                        <NavLink to={'/about'}>{'About'}</NavLink>
+                        <NavLink
+                            to={'/about'}
+                            style={({isActive}) => ({
+                                fontWeight: isActive ? '900' : '500',
+                            })}
+                            className={'list-item'}>
+                            {'About'}
+                        </NavLink>
                     </li>
                     <li>
-                        <NavLink to={'/contact'}>{'Contact'}</NavLink>
+                        <NavLink
+                            to={'/contact'}
+                            style={({isActive}) => ({
+                                fontWeight: isActive ? '900' : '500',
+                            })}
+                            className={'list-item'}>
+                            {'Contact'}
+                        </NavLink>
                     </li>
                 </ul>
+                <NavLink to={'/'} className={'title'}>
+                    {'Landing'}
+                </NavLink>
+                <div className={'buy-button-container'}>
+                    <NavLink
+                        to={'/'}
+                        title={'Buy Now'}
+                        className={'buynow-button'}>
+                        {'Buy Now'}
+                    </NavLink>
+                </div>
             </div>
         </nav>
     );

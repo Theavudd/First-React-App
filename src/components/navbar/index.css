@@ -1,0 +1,59 @@
+.navbar {
+    height: 60px;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    background-color: transparent;
+    padding: auto;
+}
+.nav-list {
+    display: flex;
+    align-self: flex-start;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    list-style: none;
+    flex: 0.3;
+}
+.list-item {
+    margin: auto;
+    display: flex;
+    font-size: 14px;
+    line-height: 24px;
+    color: #505f98;
+    text-decoration: none;
+}
+
+.title {
+    flex: calc(0.4);
+    text-align: center;
+    justify-self: center;
+    color: #505f98;
+    font-size: 26px;
+    line-height: 38px;
+    text-decoration: none;
+    font-weight: 900;
+}
+.buy-button-container {
+    flex: 0.3;
+    justify-content: center;
+    display: flex;
+    vertical-align: middle;
+}
+.buynow-button {
+    flex: 0.3;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 26px;
+    background-color: #111b47;
+    border-radius: 2px;
+}

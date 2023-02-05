@@ -5,9 +5,6 @@ import NavBar from '../navbar';
 const Header = () => {
     return (
         <header>
-            <NavLink to={'/'}>
-                <h1>{'Landing'}</h1>
-            </NavLink>
             <NavBar />
         </header>
     );
